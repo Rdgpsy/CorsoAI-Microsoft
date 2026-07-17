@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio professionale</title>
+  <style>
+    :root { --bg: #0f172a; --card: #111827; --text: #e5e7eb; --muted: #94a3b8; --accent: #38bdf8; --accent2: #a78bfa; }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: Arial, sans-serif; background: linear-gradient(135deg, var(--bg), #1e293b); color: var(--text); }
+    a { color: var(--accent); text-decoration: none; }
+    .container { max-width: 1100px; margin: 0 auto; padding: 24px; }
+    header { background: rgba(17,24,39,0.9); border: 1px solid rgba(255,255,255,0.08); border-radius: 24px; padding: 40px; box-shadow: 0 20px 40px rgba(0,0,0,0.25); }
+    .hero { display: flex; justify-content: space-between; gap: 24px; align-items: center; flex-wrap: wrap; }
+    .chip { display: inline-block; padding: 8px 12px; border-radius: 999px; background: rgba(56,189,248,0.15); color: var(--accent); margin: 6px 6px 0 0; }
+    section { margin-top: 24px; background: rgba(17,24,39,0.9); border: 1px solid rgba(255,255,255,0.08); border-radius: 20px; padding: 24px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
+    .card { background: rgba(255,255,255,0.04); padding: 16px; border-radius: 16px; }
+    ul { padding-left: 18px; }
+    .btn { display: inline-block; margin-top: 12px; padding: 10px 14px; border-radius: 999px; background: linear-gradient(90deg, var(--accent), var(--accent2)); color: white; font-weight: bold; }
+    @media (max-width: 700px) { header, section { padding: 20px; } }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="hero">
+        <div>
+          <p style="text-transform: uppercase; letter-spacing: 0.3em; color: var(--accent); margin-bottom: 8px;">Portfolio professionale</p>
+          <h1>Raffaele</h1>
+          <h2>Professionista multiprofessionale · Torino</h2>
+          <p>Professionista con esperienza multiprofessionale orientata a soluzioni concrete, collaborazione e crescita continua. Forte capacità di adattamento in contesti tecnici, organizzativi e di progetto, con particolare attenzione a qualità, organizzazione e risultati.</p>
+          <div>
+            <span class="chip">Età non indicata</span>
+            <span class="chip">Esperienza multiprofessionale</span>
+            <span class="chip">Orientato a risultati</span>
+          </div>
+        </div>
+        <div class="card" style="min-width: 220px;">
+          <h3>Competenze chiave</h3>
+          <span class="chip">Python</span>
+          <span class="chip">Azure</span>
+          <span class="chip">AI</span>
+          <span class="chip">Project Management</span>
+          <span class="chip">Problem Solving</span>
+        </div>
+      </div>
+    </header>
+
+    <section>
+      <h3>Esperienza professionale</h3>
+      <div class="grid">
+        <div class="card">
+          <h4>Responsabile e consulente</h4>
+          <p style="color: var(--accent); margin: 4px 0;">Esperienza multiprofessionale · 2020 - Presente</p>
+          <p>Coordinamento, analisi, consulenza e supporto a progetti complessi con forte attenzione a qualità, organizzazione e risultati.</p>
+        </div>
+        <div class="card">
+          <h4>Esperienza tecnica e progettuale</h4>
+          <p style="color: var(--accent); margin: 4px 0;">Ambiti differenti · 2018 - 2020</p>
+          <p>Attività orientate a supporto operativo, sviluppo di soluzioni, gestione di processi e miglioramento continuo.</p>
+        </div>
+        <div class="card">
+          <h4>Formazione e crescita professionale</h4>
+          <p style="color: var(--accent); margin: 4px 0;">Percorso universitario e professionale · 2014 - 2018</p>
+          <p>Approccio metodologico, capacità di apprendimento rapido e orientamento alla collaborazione.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h3>Progetti e capacità</h3>
+      <div class="grid">
+        <div class="card">
+          <h4>Progetti interdisciplinari</h4>
+          <p>Esperienze che hanno richiesto integrazione tra analisi, organizzazione e supporto operativo.</p>
+        </div>
+        <div class="card">
+          <h4>Innovazione e miglioramento</h4>
+          <p>Attenzione a processi, semplificazione, qualità e risultati misurabili.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h3>Formazione</h3>
+      <div class="grid">
+        <div class="card">Laurea / formazione specialistica</div>
+        <div class="card">Percorsi formativi e aggiornamenti professionali</div>
+      </div>
+    </section>
+
+    <section>
+      <h3>Contatti</h3>
+      <p>Per contatti professionali: <a href="mailto:contatti@example.com">contatti@example.com</a> · <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a></p>
+      <a class="btn" href="mailto:contatti@example.com">Contattami</a>
+    </section>
+  </div>
+</body>
+</html>
