@@ -1,1 +1,1 @@
-console.log('Portfolio pronto');
+document.getElementById('year').textContent = new Date().getFullYear();

@@ -3,98 +3,242 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio professionale</title>
-  <style>
-    :root { --bg: #0f172a; --card: #111827; --text: #e5e7eb; --muted: #94a3b8; --accent: #38bdf8; --accent2: #a78bfa; }
-    * { box-sizing: border-box; }
-    body { margin: 0; font-family: Arial, sans-serif; background: linear-gradient(135deg, var(--bg), #1e293b); color: var(--text); }
-    a { color: var(--accent); text-decoration: none; }
-    .container { max-width: 1100px; margin: 0 auto; padding: 24px; }
-    header { background: rgba(17,24,39,0.9); border: 1px solid rgba(255,255,255,0.08); border-radius: 24px; padding: 40px; box-shadow: 0 20px 40px rgba(0,0,0,0.25); }
-    .hero { display: flex; justify-content: space-between; gap: 24px; align-items: center; flex-wrap: wrap; }
-    .chip { display: inline-block; padding: 8px 12px; border-radius: 999px; background: rgba(56,189,248,0.15); color: var(--accent); margin: 6px 6px 0 0; }
-    section { margin-top: 24px; background: rgba(17,24,39,0.9); border: 1px solid rgba(255,255,255,0.08); border-radius: 20px; padding: 24px; }
-    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
-    .card { background: rgba(255,255,255,0.04); padding: 16px; border-radius: 16px; }
-    ul { padding-left: 18px; }
-    .btn { display: inline-block; margin-top: 12px; padding: 10px 14px; border-radius: 999px; background: linear-gradient(90deg, var(--accent), var(--accent2)); color: white; font-weight: bold; }
-    @media (max-width: 700px) { header, section { padding: 20px; } }
-  </style>
+  <title>Raffaele De Giorgi | Psicologo Psicoterapeuta</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <nav class="topnav">
+    <div class="topnav-inner">
+      <a href="#esperienza">Esperienza clinica</a>
+      <a href="#docenza">Docenza e formazione</a>
+      <a href="#organizzazione">Impegno organizzativo</a>
+      <a href="#formazione">Formazione</a>
+      <a href="#competenze">Competenze</a>
+      <a href="#ricerca">Ricerca e pubblicazioni</a>
+      <a href="#contatti">Contatti</a>
+    </div>
+  </nav>
+
   <div class="container">
-    <header>
-      <div class="hero">
+    <header class="hero">
+      <div class="hero-top">
+        <img class="avatar" src="foto-profilo.jpg" alt="Foto di Raffaele De Giorgi" />
         <div>
-          <p style="text-transform: uppercase; letter-spacing: 0.3em; color: var(--accent); margin-bottom: 8px;">Portfolio professionale</p>
-          <h1>Raffaele</h1>
-          <h2>Professionista multiprofessionale · Torino</h2>
-          <p>Professionista con esperienza multiprofessionale orientata a soluzioni concrete, collaborazione e crescita continua. Forte capacità di adattamento in contesti tecnici, organizzativi e di progetto, con particolare attenzione a qualità, organizzazione e risultati.</p>
-          <div>
-            <span class="chip">Età non indicata</span>
-            <span class="chip">Esperienza multiprofessionale</span>
-            <span class="chip">Orientato a risultati</span>
-          </div>
+          <p class="eyebrow">Curriculum professionale</p>
+          <h1>Raffaele De Giorgi</h1>
+          <h2>Psicologo Psicoterapeuta · Maglie (Lecce), Puglia</h2>
         </div>
-        <div class="card" style="min-width: 220px;">
-          <h3>Competenze chiave</h3>
-          <span class="chip">Python</span>
-          <span class="chip">Azure</span>
-          <span class="chip">AI</span>
-          <span class="chip">Project Management</span>
-          <span class="chip">Problem Solving</span>
-        </div>
+      </div>
+      <p>
+        Psicologo psicoterapeuta con oltre trent'anni di esperienza clinica in ambito pubblico,
+        maturata negli Istituti Penitenziari, nei servizi per le dipendenze patologiche e nei
+        consultori familiari dell'ASL Lecce. Affianca all'attività clinica un percorso costante di
+        docenza, formazione e coordinamento di progetti e organizzazioni in ambito sociale e sportivo.
+      </p>
+      <div>
+        <span class="chip">Psicoterapeuta dal 1994</span>
+        <span class="chip">Iscritto Albo Psicologi Puglia dal 1993</span>
+        <span class="chip alt">Laurea in Psicologia Clinica · La Sapienza, 1987</span>
       </div>
     </header>
 
-    <section>
-      <h3>Esperienza professionale</h3>
-      <div class="grid">
-        <div class="card">
-          <h4>Responsabile e consulente</h4>
-          <p style="color: var(--accent); margin: 4px 0;">Esperienza multiprofessionale · 2020 - Presente</p>
-          <p>Coordinamento, analisi, consulenza e supporto a progetti complessi con forte attenzione a qualità, organizzazione e risultati.</p>
+    <section id="esperienza">
+      <h3>Esperienza clinica principale</h3>
+      <p class="section-sub">Ruoli in ambito pubblico, in ordine cronologico</p>
+      <div class="timeline">
+        <div class="entry">
+          <h4>Libera professione e collaborazioni cliniche</h4>
+          <p class="meta">1990 – 2004</p>
+          <p>
+            Colloqui clinici, prove diagnostiche e perizie tecniche d'ufficio con lo studio di un 
+            collega; consulenza psicologica per minori affidati dal Tribunale
+            per i Minorenni presso gli Istituti "Buon Pastore" e "G. Comi"; attività diagnostica e
+            terapeutica presso il Centro Millenium e il centro diurno "Totum" di Cursi e la
+            Comunità CIPPS di Cavallino.
+          </p>
         </div>
-        <div class="card">
-          <h4>Esperienza tecnica e progettuale</h4>
-          <p style="color: var(--accent); margin: 4px 0;">Ambiti differenti · 2018 - 2020</p>
-          <p>Attività orientate a supporto operativo, sviluppo di soluzioni, gestione di processi e miglioramento continuo.</p>
+        <div class="entry">
+          <h4>Dirigente psicologo convenzionato</h4>
+          <p class="meta">Ministero della Giustizia · Case Circondariali di Lecce e Brindisi · Gennaio 1992 – Giugno 2007</p>
+          <p>
+            Psicologo psicoterapeuta nel Presidio Sanitario per Detenuti Tossicodipendenti e
+            Affetti da HIV negli Istituti per Adulti dell'Amministrazione Penitenziaria; ideazione
+            e co-gestione dei progetti terapeutici per le sezioni penitenziarie di Brindisi.
+          </p>
         </div>
-        <div class="card">
-          <h4>Formazione e crescita professionale</h4>
-          <p style="color: var(--accent); margin: 4px 0;">Percorso universitario e professionale · 2014 - 2018</p>
-          <p>Approccio metodologico, capacità di apprendimento rapido e orientamento alla collaborazione.</p>
+        <div class="entry">
+          <h4>Psicologo specialista convenzionato ACN</h4>
+          <p class="meta">ASL Lecce · Servizio Sert, Casa Circondariale di Lecce · Luglio 2007 – Dicembre 2016</p>
+          <p>
+            Attività clinica e terapeutica nel servizio per detenuti tossicodipendenti negli
+            istituti penitenziari, con impegno orario crescente da 17 a 35 ore settimanali dal 2016.
+          </p>
+        </div>
+        <div class="entry">
+          <h4>Collaboratore, Ufficio Esecuzione Penale Esterna di Lecce</h4>
+          <p class="meta">Libero-professionista · Ottobre 2004 – Maggio 2014</p>
+          <p>
+            Stesura di relazioni per la Magistratura di Sorveglianza e partecipazione al progetto
+            "Miglioramento delle opportunità di reinserimento lavorativo per persone in esecuzione
+            penale esterna".
+          </p>
+        </div>
+        <div class="entry">
+          <h4>Dirigente psicologo convenzionato — Consultorio Familiare</h4>
+          <p class="meta">ASL Lecce · Consultorio Familiare di Otranto · Gennaio 2017 – oggi</p>
+          <p>
+            Psicoterapeuta presso il servizio consultoriale del Distretto Socio Sanitario di
+            Maglie; tutor formatore per psicologi e studenti universitari di psicologia.
+          </p>
         </div>
       </div>
     </section>
 
-    <section>
-      <h3>Progetti e capacità</h3>
-      <div class="grid">
-        <div class="card">
-          <h4>Progetti interdisciplinari</h4>
-          <p>Esperienze che hanno richiesto integrazione tra analisi, organizzazione e supporto operativo.</p>
+    <section id="docenza">
+      <h3>Docenza e attività formativa</h3>
+      <p class="section-sub">Insegnamento e progetti educativi nelle scuole</p>
+      <div class="timeline">
+        <div class="entry alt">
+          <h4>Esperto psicologo per i progetti scolastici del Consultorio di Otranto</h4>
+          <p class="meta">Istituti Comprensivi "Karol Wojtyla" e "E. Lanoce", Otranto · 2017 – 2025</p>
+          <p>
+            Progettazione e gestione del corso "Ben-essere: educazione all'affettività" in più
+            anni scolastici, e del corso di prevenzione del bullismo "Essere diversi è un valore".
+          </p>
         </div>
-        <div class="card">
-          <h4>Innovazione e miglioramento</h4>
-          <p>Attenzione a processi, semplificazione, qualità e risultati misurabili.</p>
+        <div class="entry alt">
+          <h4>Docente a contratto di Psicologia, Filosofia e Pedagogia</h4>
+          <p class="meta">Istituto Magistrale di Maglie e Tricase, Liceo Artistico di Lecce, IISS N. Moccia (Nardò) · 1991 – 2002</p>
+          <p>
+            Incarichi a tempo determinato e corsi finanziati dal Ministero della Pubblica
+            Istruzione, tra cui "Psicologia della Terza Età" e "Recupero Autostima Alunni".
+          </p>
         </div>
       </div>
     </section>
 
-    <section>
+    <section id="organizzazione">
+      <h3>Impegno organizzativo e associativo</h3>
+      <p class="section-sub">Fondazione e coordinamento di realtà sociali e sportive</p>
+      <div class="grid">
+        <div class="card">
+          <h4>Presidente, Cooperativa "Obiettivo Giovani"</h4>
+          <p>Cavallino (LE) · 1995 – 2000. Ideazione e coordinamento di attività ludico-educative, formative e culturali per bambini, ragazzi e adulti.</p>
+        </div>
+        <div class="card">
+          <h4>Capo scout AGESCI</h4>
+          <p>Gruppi Lecce 1 e Maglie 1 · 1992 – 1999. Coordinamento di unità scout e formazione capi anche a livello regionale.</p>
+        </div>
+        <div class="card">
+          <h4>Presidente, Associazione Sportiva "Life Sport Salento"</h4>
+          <p>Corigliano d'Otranto · 2008 – 2009. Attività di pallavolo e pattinaggio.</p>
+        </div>
+        <div class="card">
+          <h4>Presidente, Società Sportiva "Accademia dello Sport"</h4>
+          <p>Maglie · 2009 – 2010. Attività di pallavolo e pattinaggio.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="formazione">
       <h3>Formazione</h3>
+      <div class="timeline">
+        <div class="entry">
+          <h4>Master di II livello — Esperto di Valutazione e Riabilitazione Neurocognitiva nel ciclo di vita e tecnologie innovative</h4>
+          <p class="meta">Università del Salento · Anno accademico 2024/2025</p>
+        </div>
+        <div class="entry">
+          <h4>Master di I livello — Principi e Regole dell'Amministrazione Pubblica</h4>
+          <p class="meta">Università del Salento · Anno accademico 2016/2017</p>
+        </div>
+        <div class="entry">
+          <h4>Laurea triennale in Ingegneria dell'Informazione</h4>
+          <p class="meta">Università del Salento · 2010/2011 · Votazione 97/110</p>
+        </div>
+        <div class="entry">
+          <h4>Psicoterapeuta ex art. 35 L. 56/89</h4>
+          <p class="meta">Ordine degli Psicologi della Puglia · Riconoscimento formazione specialistica in psicoterapia, 1994</p>
+        </div>
+        <div class="entry">
+          <h4>Formazione quadriennale in psicoterapia interattivo-cognitiva</h4>
+          <p class="meta">Istituto "Il Gabbiano", Colico (CO) · Due anni frequentati, esame di ammissione al terzo anno superato nel 1992</p>
+        </div>
+        <div class="entry">
+          <h4>Iscrizione all'Albo degli Psicologi della Puglia</h4>
+          <p class="meta">Ottobre 1993</p>
+        </div>
+        <div class="entry">
+          <h4>Laurea in Psicologia Clinica</h4>
+          <p class="meta">Università degli Studi di Roma "La Sapienza" · 20 marzo 1987 · Votazione 107/110</p>
+          <p>
+            Tesi sperimentale: "Il volontariato internazionale in Italia: una ricerca empirica
+            sulla formazione dei volontari negli organismi di volontariato internazionale".
+          </p>
+        </div>
+        <div class="entry">
+          <h4>Maturità Scientifica</h4>
+          <p class="meta">Liceo Scientifico "G. Banzi", Lecce · 1982</p>
+        </div>
+      </div>
+      <p class="section-sub" style="margin-top: 20px;">
+        A queste tappe si aggiunge un aggiornamento professionale continuo, con oltre 30 corsi
+        ECM frequentati dal 1998 a oggi presso l'Ordine degli Psicologi della Puglia, l'ASL Lecce
+        e altri enti, su temi quali psicodiagnostica, dipendenze patologiche, psicologia
+        dell'emergenza e comunicazione in sanità.
+      </p>
+    </section>
+
+    <section id="competenze">
+      <h3>Competenze</h3>
       <div class="grid">
-        <div class="card">Laurea / formazione specialistica</div>
-        <div class="card">Percorsi formativi e aggiornamenti professionali</div>
+        <div class="card">
+          <h4>Ambito clinico</h4>
+          <p>Psicoterapia interattivo-cognitiva, psicodiagnostica, trattamento delle dipendenze patologiche, valutazione delle capacità genitoriali.</p>
+        </div>
+        <div class="card">
+          <h4>Ambito giuridico e penitenziario</h4>
+          <p>Psicologia giuridica, relazioni per la Magistratura di Sorveglianza, progetti di reinserimento per persone in esecuzione penale.</p>
+        </div>
+        <div class="card">
+          <h4>Formazione e coordinamento</h4>
+          <p>Docenza, progettazione di percorsi formativi, coordinamento di gruppi, cooperative e associazioni.</p>
+        </div>
+        <div class="card">
+          <h4>Informatica e lingue</h4>
+          <p>ECDL, pacchetto Office, gestione di siti web su piattaforma Joomla; inglese a livello base.</p>
+        </div>
       </div>
     </section>
 
-    <section>
-      <h3>Contatti</h3>
-      <p>Per contatti professionali: <a href="mailto:contatti@example.com">contatti@example.com</a> · <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a></p>
-      <a class="btn" href="mailto:contatti@example.com">Contattami</a>
+    <section id="ricerca">
+      <h3>Ricerca e pubblicazioni</h3>
+      <div class="timeline">
+        <div class="entry alt">
+          <h4>Collaborazione con il Centro Studi LABOS di Roma</h4>
+          <p>Tre ricerche: "L'associazionismo di solidarietà con i paesi in via di sviluppo", "Sistema informativo multidimensionale in area handicap", "Le politiche socio-assistenziali delle USL".</p>
+        </div>
+        <div class="entry alt">
+          <h4>"Interventi di rimozione degli ostacoli di natura psicosociale: il ruolo della famiglia"</h4>
+          <p class="meta">Con un collega, in "Salute e servizi – L'handicap infantile nella realtà territoriale", Edizioni LUATE, 1990</p>
+        </div>
+        <div class="entry alt">
+          <h4>"AIDS: indagine qualitativa sulla popolazione giovanile e sui tossicodipendenti in provincia di Lecce"</h4>
+          <p class="meta">Ricerca finanziata dal Ministero del Lavoro e della Previdenza Sociale, 1997</p>
+        </div>
+      </div>
     </section>
+
+    <section id="contatti">
+      <h3>Contatti</h3>
+      <p>Maglie (Lecce), Puglia</p>
+      <a class="btn" href="https://www.linkedin.com/in/raffaele-de-giorgi-b37600104" target="_blank" rel="noopener">Profilo LinkedIn</a>
+    </section>
+
+    <footer>
+      <p>Contenuti basati sul curriculum vitae personale · Aggiornato <span id="year"></span></p>
+    </footer>
   </div>
+
+  <script src="app.js"></script>
 </body>
 </html>
